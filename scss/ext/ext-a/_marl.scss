@@ -1,0 +1,4 @@
+@mixin marl {
+	@include ff(margin-left, $sp-min, $sp-max);
+}
+

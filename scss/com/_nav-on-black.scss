@@ -1,0 +1,7 @@
+@mixin nav-on-black {
+	.logo, .nav-trigger {
+		svg {
+			fill: #fff;
+		}
+	}	
+}

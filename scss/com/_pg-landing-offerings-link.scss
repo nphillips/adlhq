@@ -1,0 +1,33 @@
+@mixin pg-landing-offerings-link {
+
+	a {
+		color:$turq;
+		
+		display:inline-block;
+		font-family:$sans;
+
+		text-decoration:none;
+			@include ff(font-size,20px,32px);
+
+			@include flexbox; 
+			@include align-items(center);
+			font-weight:200;
+		span {
+			display:inline-block;
+			vertical-align:middle;
+			padding-right:$sp1;
+		}
+		.symbol-landing-arrow {
+			display:inline-block;
+			vertical-align:middle;
+			@include ff(height,30px,30px);
+			@include ff(width,54px,54px);
+			
+		}
+		svg {
+			fill: $turq;
+			width:100%;
+		}
+	}
+
+}

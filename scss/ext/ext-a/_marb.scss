@@ -1,0 +1,4 @@
+@mixin marb {
+	@include ff(margin-bottom, $sp-min, $sp-max);
+}
+

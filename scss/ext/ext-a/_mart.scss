@@ -1,0 +1,4 @@
+@mixin mart {
+	@include ff(margin-top, $sp-min, $sp-max);
+}
+

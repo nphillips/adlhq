@@ -1,0 +1,13 @@
+@mixin nav-trigger {
+	cursor:pointer;
+	@include ff(height,$sp5, $sp6);
+	@include ff(width,$sp5, $sp6);
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(center);
+	@include align-items(center);
+	svg {
+		@include ff(width,28px, $sp4);
+	}
+
+}

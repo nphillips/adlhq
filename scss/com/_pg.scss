@@ -1,0 +1,21 @@
+@mixin pg {
+
+	min-height:100vh;
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(justify);
+	@include flex-basis(1);
+
+	> nav {
+		@include flex-shrink(0);
+	}
+	> .main-content {
+		@include flex(1 0 auto);
+	}
+	footer {
+		@include flex-shrink(0);
+
+	}
+	
+
+}

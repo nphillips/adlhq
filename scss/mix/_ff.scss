@@ -1,0 +1,6 @@
+@mixin ff($selectors, $min, $max) {
+	@include fluid($selectors, $bp1, $bp3, $min, $max);
+}
+
+
+

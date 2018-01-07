@@ -1,0 +1,9 @@
+.pg-landing { @import 'com/pg'; & { @include pg; }
+	@import 'com/pg-black'; & { @extend %pg-black; }
+	@import 'com/nav-on-black'; & { @extend %nav-on-black; }
+	.main-content {
+		@import 'com/pg-landing-main'; & { @include pg-landing-main; }
+		@import 'com/pg-landing-block-hero-text'; .block-hero-text { @include pg-landing-block-hero-text; }
+		@import 'com/pg-landing-offerings-link'; .seeourofferings { @include pg-landing-offerings-link; }
+	}
+}

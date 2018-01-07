@@ -1,0 +1,6 @@
+@mixin max {
+	max-width: $content-max;
+	@include padh;
+	margin-left:auto;
+	margin-right:auto;
+}

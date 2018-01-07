@@ -1,0 +1,16 @@
+@mixin nav {
+	> .dx-col {
+		@include flexbox;
+		@include justify-content(justify);
+		@include align-items(center);
+		@include ff(height, $sp10, $sp14);
+		@include padh;
+		@include max;
+	}
+	.logo {
+		svg {
+			@include ff(width, $sp10, 100px);
+		}
+	}
+
+}

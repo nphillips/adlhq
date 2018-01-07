@@ -1,0 +1,7 @@
+nav { @import 'com/nav'; @include nav;
+
+	@import 'com/nav-menu-area'; .nav-menu-area { @include nav-menu-area; }
+	@import 'com/nav-trigger'; .nav-trigger { @include nav-trigger; }
+
+
+}

@@ -1,0 +1,96 @@
+@mixin footer {
+	background:$turq;
+	font-family:$sans;
+	@include ff(font-size, 14px, 20px);
+	color:#000;
+	ul {
+		list-style-type:none;
+		padding:0;
+		margin:0;
+	}
+	a {
+		text-decoration:none;
+		color:#000;
+		padding-top:$sp1;
+		padding-bottom:$sp1;
+		display:inline-block;
+		padding-top:$sp1;
+		padding-bottom:$sp1;
+	}
+	.footer-content-side-hd {
+		padding-top:$sp1;
+		padding-bottom:$sp1;
+		font-family:$serif;
+	}
+	.footer-content {
+		@include ff(padding-top padding-bottom, $sp2, $sp4);
+		@include max;
+		> .dx-col {
+			width:100%;
+			@media (min-width:$bp2) {
+				@include flexbox;
+				@include justify-content(flex-end);
+				@include align-items(center);
+			}
+		}
+	}
+	.footer-content-main {
+		@media (min-width:$bp2) {
+			@include flex(1 1 700px);
+		}
+		ul {
+			columns:3 100px;
+			@media (min-width:$bp2) {
+				@include flexbox;
+			}
+		}
+		li {
+			@media (min-width:$bp2) {
+			display:inline-block;
+		}
+			@include flex(1 1 auto);
+			padding-right:$sp2;
+			&:last-of-type {
+				padding-right:0;
+			}
+			@media (min-width:$bp2) {
+				padding-right:0;
+			}
+		}
+	}
+	.footer-content-side {
+		margin-left:auto; 
+		margin-top:$sp2;
+		@media (min-width:$bp2) {
+			margin-top:0;
+			@include flex(0 1 300px);
+		}
+		ul {
+			@media (min-width:$bp2) {
+				
+				@include flexbox;
+			}
+			max-width:300px;
+		}
+		a {
+		}
+		li {
+			padding-right:$sp2;
+			&:last-of-type {
+				padding-right:0;
+			}
+			@media (min-width:$bp2) {
+				padding-right:0;
+			}
+			margin-left:0;
+			text-align:right;
+			@include flex(1 1 auto);
+			display:inline-block;
+		}
+	}
+	.footer-copyright {
+		@include max;
+		@include ff(padding-bottom, $sp2, $sp4);
+		font-family:$serif;
+	}
+}

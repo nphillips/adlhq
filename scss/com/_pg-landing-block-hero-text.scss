@@ -1,0 +1,35 @@
+@mixin pg-landing-block-hero-text {
+	height:100%;
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(flex-end);
+	font-weight:500;
+	@include max;
+	font-family: $serif ;
+	color:#fff;
+	@include padv;
+	div {
+
+		&:first-of-type {
+			margin-top:0;
+		}
+		@include ff(margin-top, $sp4, $sp8);
+
+		@include ff(font-size, 24px, 42px);
+		line-height:1.2;
+	}
+	.yourbrand {
+		@include ff(font-size, 32px, 58px);
+		color:$turq;
+		line-height:1;
+	}
+	.buildingbrands {
+		max-width:1050px;
+		.spacer {
+
+			@media (min-width:$bp3) {
+				display:block;
+			}
+		}
+	}
+}

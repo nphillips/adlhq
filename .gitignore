@@ -1,0 +1,19 @@
+# Don't check auto-generated stuff into git
+coverage
+build
+node_modules
+stats.json
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
+config.codekit3
+.sass-cache
+.sass-cache/*
+style.css.map
+*.sketch
+_
+_/*
+z-rough-pieces/*
+

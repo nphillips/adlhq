@@ -1,0 +1,4 @@
+@mixin padb {
+	@include ff(padding-bottom, $sp-min, $sp-max);
+}
+

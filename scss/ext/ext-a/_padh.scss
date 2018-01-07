@@ -1,0 +1,4 @@
+@mixin padh {
+	@include ff(padding-left padding-right, $sp-min, $sp-max);
+}
+

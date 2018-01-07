@@ -1,0 +1,5 @@
+@import 'reset';
+
+@import '../com/html'; html { @include html; }
+@import '../com/body'; body { @include body; }
+@import '../com/footer'; footer { @include footer; }
