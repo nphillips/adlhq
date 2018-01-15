@@ -1,0 +1,356 @@
+/* Single property */
+html {
+  font-size: 14px; }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(14px + 4 * (100vw - 320px) / 1046); } }
+  @media screen and (min-width: 1366px) {
+    html {
+      font-size: 18px; } }
+
+/* Multiple properties with same values */
+h1 {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+  @media screen and (min-width: 20em) {
+    h1 {
+      padding-bottom: calc(2em + 2 * (100vw - 20em) / 50);
+      padding-top: calc(2em + 2 * (100vw - 20em) / 50); } }
+  @media screen and (min-width: 70em) {
+    h1 {
+      padding-bottom: 4em;
+      padding-top: 4em; } }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+html, body, div, h1, p, a, video {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px; }
+  @media screen and (min-width: 380px) {
+    html {
+      font-size: calc(16px + 4 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 20px; } }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: Chronicle Display A, Chronicle Display B, comic;
+  color: #444; }
+  body:before {
+    z-index: -1;
+    content: '';
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url(../media/home2.jpg) center center no-repeat;
+    background-size: cover; }
+    @media (min-width: 760px) {
+      body:before {
+        background: none; } }
+
+footer {
+  background: #B8FFED;
+  font-family: Gotham SSm A, Gotham SSm B, comic;
+  font-size: 14px;
+  color: #000; }
+  @media screen and (min-width: 380px) {
+    footer {
+      font-size: calc(14px + 6 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    footer {
+      font-size: 20px; } }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  footer a {
+    text-decoration: none;
+    color: #000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  footer .footer-content-side-hd {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Chronicle Display A, Chronicle Display B, comic; }
+  footer .footer-content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 1200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (min-width: 380px) {
+      footer .footer-content {
+        padding-top: calc(16px + 16 * (100vw - 380px) / 644);
+        padding-bottom: calc(16px + 16 * (100vw - 380px) / 644); } }
+    @media screen and (min-width: 1024px) {
+      footer .footer-content {
+        padding-top: 32px;
+        padding-bottom: 32px; } }
+    @media screen and (min-width: 380px) {
+      footer .footer-content {
+        padding-left: calc(24px + 24 * (100vw - 380px) / 644);
+        padding-right: calc(24px + 24 * (100vw - 380px) / 644); } }
+    @media screen and (min-width: 1024px) {
+      footer .footer-content {
+        padding-left: 48px;
+        padding-right: 48px; } }
+    footer .footer-content > .dx-col {
+      width: 100%; }
+      @media (min-width: 760px) {
+        footer .footer-content > .dx-col {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+          -moz-justify-content: flex-end;
+          justify-content: flex-end;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center; } }
+  @media (min-width: 760px) {
+    footer .footer-content-main {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 700px;
+      -moz-box-flex: 1;
+      -moz-flex: 1 1 700px;
+      -ms-flex: 1 1 700px;
+      flex: 1 1 700px; } }
+  footer .footer-content-main ul {
+    columns: 3 100px; }
+    @media (min-width: 760px) {
+      footer .footer-content-main ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+  footer .footer-content-main li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-right: 16px; }
+    @media (min-width: 760px) {
+      footer .footer-content-main li {
+        display: inline-block; } }
+    footer .footer-content-main li:last-of-type {
+      padding-right: 0; }
+    @media (min-width: 760px) {
+      footer .footer-content-main li {
+        padding-right: 0; } }
+  footer .footer-content-side {
+    margin-left: auto;
+    margin-top: 16px; }
+    @media (min-width: 760px) {
+      footer .footer-content-side {
+        margin-top: 0;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 300px;
+        -moz-box-flex: 0;
+        -moz-flex: 0 1 300px;
+        -ms-flex: 0 1 300px;
+        flex: 0 1 300px; } }
+    footer .footer-content-side ul {
+      max-width: 300px; }
+      @media (min-width: 760px) {
+        footer .footer-content-side ul {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex; } }
+    footer .footer-content-side li {
+      padding-right: 16px;
+      margin-left: 0;
+      text-align: right;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -moz-box-flex: 1;
+      -moz-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      display: inline-block; }
+      footer .footer-content-side li:last-of-type {
+        padding-right: 0; }
+      @media (min-width: 760px) {
+        footer .footer-content-side li {
+          padding-right: 0; } }
+  footer .footer-copyright {
+    max-width: 1200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    font-family: Chronicle Display A, Chronicle Display B, comic; }
+    @media screen and (min-width: 380px) {
+      footer .footer-copyright {
+        padding-left: calc(24px + 24 * (100vw - 380px) / 644);
+        padding-right: calc(24px + 24 * (100vw - 380px) / 644); } }
+    @media screen and (min-width: 1024px) {
+      footer .footer-copyright {
+        padding-left: 48px;
+        padding-right: 48px; } }
+    @media screen and (min-width: 380px) {
+      footer .footer-copyright {
+        padding-bottom: calc(16px + 16 * (100vw - 380px) / 644); } }
+    @media screen and (min-width: 1024px) {
+      footer .footer-copyright {
+        padding-bottom: 32px; } }
+
+nav > .dx-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: justify;
+  -moz-justify-content: justify;
+  justify-content: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  height: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 380px) {
+    nav > .dx-col {
+      height: calc(80px + 32 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    nav > .dx-col {
+      height: 112px; } }
+  @media screen and (min-width: 380px) {
+    nav > .dx-col {
+      padding-left: calc(24px + 24 * (100vw - 380px) / 644);
+      padding-right: calc(24px + 24 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    nav > .dx-col {
+      padding-left: 48px;
+      padding-right: 48px; } }
+  @media screen and (min-width: 380px) {
+    nav > .dx-col {
+      padding-left: calc(24px + 24 * (100vw - 380px) / 644);
+      padding-right: calc(24px + 24 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    nav > .dx-col {
+      padding-left: 48px;
+      padding-right: 48px; } }
+
+nav .logo svg {
+  width: 80px; }
+  @media screen and (min-width: 380px) {
+    nav .logo svg {
+      width: calc(80px + 20 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    nav .logo svg {
+      width: 100px; } }
+
+nav .nav-menu-area {
+  margin-left: auto; }
+
+nav .nav-trigger {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+  @media screen and (min-width: 380px) {
+    nav .nav-trigger {
+      height: calc(40px + 8 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    nav .nav-trigger {
+      height: 48px; } }
+  @media screen and (min-width: 380px) {
+    nav .nav-trigger {
+      width: calc(40px + 8 * (100vw - 380px) / 644); } }
+  @media screen and (min-width: 1024px) {
+    nav .nav-trigger {
+      width: 48px; } }
+  nav .nav-trigger svg {
+    width: 28px; }
+    @media screen and (min-width: 380px) {
+      nav .nav-trigger svg {
+        width: calc(28px + 4 * (100vw - 380px) / 644); } }
+    @media screen and (min-width: 1024px) {
+      nav .nav-trigger svg {
+        width: 32px; } }
